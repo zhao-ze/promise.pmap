@@ -2,9 +2,9 @@
   "name": "promise.pmap",
   "version": "1.0.0",
   "description": "promise.pmap",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
   "keywords": [
     "concurrency",
@@ -17,5 +17,18 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/zhaozee/promise.pmap.git"
+  },
+  "files": [
+    "package.json",
+    "lib",
+    "src",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0"
   }
 }
