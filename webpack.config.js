@@ -10,4 +10,15 @@ module.exports = {
     library: 'promise_pmap',
     libraryTarget: 'umd',
   },
+  module: {
+    rules: [
+      {
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+        },
+      },
+    ],
+  },
 };
